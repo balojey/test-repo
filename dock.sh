@@ -1,6 +1,4 @@
-docker run -it --rm \
- --name n8n \
- -p 5678:5678 \
- -v ~/.n8n:/home/node/.n8n \
- docker.n8n.io/n8nio/n8n \
- n8n start --tunnel
+mvn archetype:generate \
+  -DarchetypeGroupId=org.apache.flink \
+  -DarchetypeArtifactId=flink-quickstart-java \
+  -DarchetypeVersion=1.19.1
